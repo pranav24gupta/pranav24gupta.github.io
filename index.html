@@ -356,21 +356,29 @@ if(page_log == '1'){
 	}
 </script> </body>
 
-<script>
-		window.ENVIRONMENT_CONFIG = {
-			apiKey: 'd5fab06314bc1fdf935423b872d01cb4f3c578ddfbfa8a6a544a6d83dccae0e3',
-		}
-</script>
-<script>
-	(() => {
-			window.EXP_PLATFORM_ORIGIN = "*";
-			const s = document.createElement("script");
-			s.async = true;
-			s.src = "https://unpkg.com/ab-designer@0.6.0/dist/ab-designer.umd.production.min.js";
-			document.head.appendChild(s);
-			window.parent.postMessage({event:'APIKEY',key: window.ENVIRONMENT_CONFIG.apiKey},'*')
-			return
-	})();
-</script>
-<script src="https://res.cloudinary.com/dytc8qjjz/raw/upload/v1674194875/script_abtesting_v1.js"></script>
+
+<script src="https://storage.googleapis.com/abtesting-uat/html2canvas.min.js"></script>
+   <script> window.ENVIRONMENT_CONFIG = { apiKey: "f880877aaf2d961dae6c3c542d11c56ec892806f236ec931c753094250984061", } </script>
+    <script>
+            (() => {
+
+                window.EXP_PLATFORM_ORIGIN = "*";
+				window.apiRoute = "https://abtesting-uat.jio.com/auth"
+                const s = document.createElement("script");
+
+                s.async = true;
+
+                console.log(s);
+
+                s.src = "https://storage.googleapis.com/abtesting-uat/abtesting_visualeditor.js";
+
+                document.head.appendChild(s);
+
+                window.parent.postMessage({ event: 'APIKEY', key: window.ENVIRONMENT_CONFIG.apiKey }, '*');
+
+            })();
+
+    </script>
+    <script src="https://storage.googleapis.com/abtesting-uat/abtesting_script.js"></script>
+
 </html>
