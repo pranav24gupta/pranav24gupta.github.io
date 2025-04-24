@@ -39,7 +39,21 @@
                 window.autocomplete_inventory = '0';
         window.preorder_status = '0';
         window.multivertical = JSON.parse('{"status":1,"GROCERIES":"PREMIUMFRUITS"}');
-    </script> <script>
+    </script><script charset="UTF-8" type="text/javascript">
+window["adrum-start-time"] = new Date().getTime();
+(function(config){
+    config.appKey = "SM-AFM-RGG";
+    config.adrumExtUrlHttp = "http://cdn.appdynamics.com";
+    config.adrumExtUrlHttps = "https://cdn.appdynamics.com";
+    config.beaconUrlHttp = "http://eum-shadow-master-col.saas.appd-test.com";
+    config.beaconUrlHttps = "https://eum-shadow-master-col.saas.appd-test.com";
+    config.sessionReplay = {"enabled":true,"sessionReplayUrlHttps":"https://eum-shadow-master-api.saas.appd-test.com"};
+    config.useHTTPSAlways = true;
+    config.resTiming = {"bufSize":200,"clearResTimingOnBeaconSend":true};
+    config.maxUrlLength = 512;
+})(window["adrum-config"] || (window["adrum-config"] = {}));
+</script>
+<script src="//cdn.appdynamics.com/adrum/adrum-24.4.0.4454.js"></script> <script>
         window.storepickup = {
             api_url:"/api/v1/store/pickup_details",
             auth:"amlvX3N0b3JlcGlja3VwOmd3N0NqTCFAR3VBSzhVZjM="
